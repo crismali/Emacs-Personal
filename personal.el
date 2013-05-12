@@ -4,10 +4,10 @@
  mouse-wheel-scroll-amount '(1)
  mouse-wheel-progressive-speed nil)
 
-(defun switch-to-previous-buffer ()
-  "toggle between this and previous buffer"
-  (interactive)
-  (switch-to-buffer (other-buffer))
+;; (defun switch-to-previous-buffer ()
+;;   "toggle between this and previous buffer"
+;;   (interactive)
+;;   (switch-to-buffer (other-buffer))
 
 (defun maximize-frame ()
   (interactive)
@@ -31,7 +31,7 @@
 (scroll-bar-mode -1)
 (set-fringe-mode 0)
 (global-linum-mode 1)
-;(global-hl-line-mode -1)
+;;(global-hl-line-mode -1)
 (setq linum-format " %d ")
 (blink-cursor-mode t)
 (set-default 'cursor-type 'bar)
@@ -55,3 +55,6 @@
 
 (add-hook 'before-save-hook 'whitespace-cleanup nil t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+; (disable-theme 'zenburn)
+; (load-theme 'neopolitan t)
